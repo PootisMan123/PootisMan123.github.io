@@ -4,56 +4,41 @@
 @import 'libs/skel';
 
 /*
-	Hyperspace by HTML5 UP
-	html5up.net | @n33co
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Type */
+/* Section/Article */
 
-	body, input, select, textarea {
-		color: _palette(fg-bold);
-	}
-
-/* Button */
-
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
-	.button {
-		position: relative;
-
-		&:after {
-			display: none;
+	section,
+	article {
+		> .last-child,
+		&.last-child {
+			margin-bottom: 0;
 		}
 	}
 
-/* Features */
+/* Banner */
 
-	.features {
-		border: solid 1px;
-	}
+	#banner {
+		background-image: url('../../images/banner.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: auto;
+		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
 
-/* Form */
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	input[type="tel"],
-	select,
-	textarea {
-		background: transparent;
-		border: solid 1px;
-	}
-
-/* Split */
-
-	.split {
-		&.style1 {
-			> :first-child {
-				padding-right: 2em;
-				width: 70%;
-			}
+		.inner {
+			background: _palette(banner, inner-bg);
 		}
+	}
+
+/* CTA  */
+
+	#cta {
+		background-image: url('../../images/banner.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: auto;
+		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
 	}

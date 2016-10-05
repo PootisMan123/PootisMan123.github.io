@@ -1,54 +1,37 @@
 /*
-	Hyperspace by HTML5 UP
-	html5up.net | @n33co
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Type */
+/* Section/Article */
 
-	body, input, select, textarea {
-		color: #ffffff;
+	section > .last-child, section.last-child,
+	article > .last-child,
+	article.last-child {
+		margin-bottom: 0;
 	}
 
-/* Button */
+/* Banner */
 
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
-	.button {
-		position: relative;
+	#banner {
+		background-image: url("../../images/banner.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: auto;
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
 	}
 
-		input[type="submit"]:after,
-		input[type="reset"]:after,
-		input[type="button"]:after,
-		button:after,
-		.button:after {
-			display: none;
+		#banner .inner {
+			background: #341b2b;
 		}
 
-/* Features */
+/* CTA */
 
-	.features {
-		border: solid 1px;
-	}
-
-/* Form */
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	input[type="tel"],
-	select,
-	textarea {
-		background: transparent;
-		border: solid 1px;
-	}
-
-/* Split */
-
-	.split.style1 > :first-child {
-		padding-right: 2em;
-		width: 70%;
+	#cta {
+		background-image: url("../../images/banner.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: auto;
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
 	}
